@@ -1,12 +1,23 @@
 {
   "name": "vue-hello-world-simple",
-  "version": "0.1.0",
-  "private": true,
+  "description": "This is a test library",
+  "version": "0.0.1",
+  "private": false,
+  "author": {
+    "name": "Bui Thanh Quan", 
+    "email": "buithanhquan12021994@gmail.com"
+  },
+  "repository": "https://github.com/buithanhquan1994/test_upload_library",
+  "bugs": "https://github.com/buithanhquan1994/test_upload_library/issues",
+  "main": ".dist/vue-hello-world-simple.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-library" : "vue-cli-service build --target lib --name vue-hello-world-simple ./src/install.js"
   },
+  
+  "files": ["dist"],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
